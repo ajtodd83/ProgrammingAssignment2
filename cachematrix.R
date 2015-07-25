@@ -1,6 +1,9 @@
 ## The following two functions cache the inverse of an invertible matrix
 ## along with the original value of the invertible matrix in a data structure
 ## called makeCacheMatrix
+##
+## Code and solution is based on stub from rdpeng and example code in
+## ProgrammingAssignment2/README.md
 
 ########################################################################
 ########################################################################
