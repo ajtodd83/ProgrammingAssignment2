@@ -5,9 +5,9 @@
 ## Code and solution is based on stub from rdpeng and example code in
 ## ProgrammingAssignment2/README.md
 
-########################################################################
-########################################################################
-
+################################################################################
+################################################################################
+##
 ## makeCacheMatrix is a data structure that takes a matrix as input, then
 ## stores the input matrix and its inverse (if one is available).
 ##
@@ -21,10 +21,11 @@
 ## get(): get the value of x
 ## setinverse(inv): change the value of inverse to that store in inv
 ## getinverse(): get the value of inverse
-
-########################################################################
-########################################################################
+##
+################################################################################
+################################################################################
 makeCacheMatrix <- function(x = matrix()) {
+    
     ## initialize the value of inverse to NULL
     inverse <- NULL
     
@@ -49,9 +50,9 @@ makeCacheMatrix <- function(x = matrix()) {
     list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
-########################################################################
-########################################################################
-
+################################################################################
+################################################################################
+##
 ## cacheSolve takes an object of type makeCacheMatrix as input, then determines
 ## whether or not the inverse of the matrix stored in makeCacheMatrix has been 
 ## calculated
@@ -63,10 +64,11 @@ makeCacheMatrix <- function(x = matrix()) {
 ## makeCacheMatrix, then modifies the value of the variable inverse in 
 ## makeCacheMatrix to the calculated inverse matrix via the setinverse()
 ## function in the makeCacheMatrix data structure
-
-########################################################################
-########################################################################
+##
+################################################################################
+################################################################################
 cacheSolve <- function(x, ...) {
+
     ## initialize the value of inverse based on the value from the getinverse()
     ## function of the makeCacheMatrix data structure x
     inverse <- x$getinverse()
